@@ -74,7 +74,7 @@ def opening(pic, kernel):
 def main():
     im = Image.open('lena.bmp').convert('L')
     lena = np.array(im)
-
+    
     lena = binarize(lena)
     kernel = [[0,1], [1,0], [-1,0], [0,-1]]
 
